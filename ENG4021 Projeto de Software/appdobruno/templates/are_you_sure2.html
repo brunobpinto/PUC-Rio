@@ -1,0 +1,7 @@
+Você tem certeza que deseja remover os Cuidados e Dicas "{{ cuidados.cuidados }}"?
+
+<form method="post">
+  {% csrf_token %}
+  <input type="submit" name="confirm" value="Sim">
+  <input type="submit" value="Não">
+</form>
