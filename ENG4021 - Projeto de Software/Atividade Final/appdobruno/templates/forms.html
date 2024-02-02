@@ -1,0 +1,26 @@
+<h1>{{ action }} Pontos Turísticos</h1>
+
+<form method="post">
+  {% csrf_token %}
+  <div>
+    <label>Nome do Ponto Turístico:</label>
+    <input name="ponto_turistico" value="{{ pontos.ponto_turistico }}">
+  </div>
+
+  <div>
+    <label>Bairro:</label>
+    <input name="bairro" value="{{ pontos.bairro }}">
+  </div>
+
+  <div>
+    <label>Cidade:</label>
+    <input name="cidade" value="{{ pontos.cidade }}">
+  </div>
+
+    <div>
+    <label>Rating:</label>
+    <input type="number" name="rating" value="{{ pontos.rating }}">
+  </div>
+
+  <input type="submit" value="Registrar">
+</form>

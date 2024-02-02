@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Bruno Barros Pinto</title>
+  <link rel="stylesheet" href="{% static 'appdobruno/css/style.css' %}">
+</head>
+
+<body>
+  <h1>Bruno Barros Pinto</h1>
+<h2><mark>Atrações Turísticas no Rio de Janeiro</mark></h2>
+
+<div> <img src="https://a.cdn-hotels.com/gdcs/production70/d1191/8aa1310a-1226-4628-962d-6beffa746837.jpg" width="700"> </div>
+  
+  <p>
+O <b style="color: green">Rio de Janeiro é uma grande cidade brasileira à beira-mar</b>, famosa pelas praias de <i>Copacabana e Ipanema</i>, pela estátua de 38 metros de altura do <i>Cristo Redentor</i>, no topo do <i>Corcovado</i>, e pelo <i>Pão de Açúcar</i>, um pico de granito com teleféricos até seu cume. A cidade também é conhecida pelas grandes favelas. O empolgante <i>Carnaval</i>, com carros alegóricos, fantasias extravagantes e sambistas, <u>é considerado o maior do mundo</u>.
+  </p>
+
+  <h2><mark>O que fazer no Rio de Janeiro:</mark> 38 lugares para visitar e dicas para a sua primeira viagem </h2>
+
+<p>Os pontos turísticos do Rio de Janeiro estão entre os lugares que todo mundo deveria visitar ao menos uma vez na vida. Se você está montando um roteiro para a sua viagem à Cidade Maravilhosa,<u> pode ser interessante conferir as dicas que foram separadas no link a seguir,</u> com informações sobre clima, praias, passeios, transporte, e muito mais. </p>
+
+<div class="link-pagina">
+    <p><a href="https://www.melhoresdestinos.com.br/o-que-fazer-no-rio-de-janeiro.html" target="_blank">Acesse as dicas aqui!</a></p>
+  </div>
+
+
+<div>  <img src="static/appdobruno/img/arcosdalapa.jpg" width="700">  </div>
+
+<div style="list-style-position: inside"> 
+  <h2>Lista de alguns dos pontos turísticos:</h2>
+    <ol>
+      {% for pontos in pontos %}
+        <li>{{pontos.ponto_turistico}} 
+          <a href=/pontosturisticos/update/{{pontos.id}}>Atualizar</a> 
+          <a href=/pontosturisticos/delete/{{pontos.id}}>Deletar</a>
+        
+        
+        
+        </li>
+      {% endfor %}
+    </ol>
+  <div class="link-pagina"> 
+    <a href="/pontosturisticos">Adcionar novo Ponto Turístico</a>
+  </div>
+  
+  <h2>Cuidados a se ter quando visitando o Rio de Janeiro:</h2>
+    <ul>
+      {% for cuidados in cuidados %}
+        <li>{{cuidados.cuidados}}
+        <a href=/cuidadosdicas/update/{{cuidados.id}}>Atualizar</a> 
+        <a href=/cuidadosdicas/delete/{{cuidados.id}}>Deletar</a>
+            
+        </li>
+      {% endfor %}
+    </ul>
+  
+    <div class="link-pagina"> 
+    <a href="/cuidadosdicas">Adcionar novo Cuidado/Dica</a>
+    </div>
+  
+</div>
+<h2><mark>Tabela de preços de passeios:</mark></h2>
+
+<table style="width:60%">
+  <tr>
+    <th>Passeio</th>
+    <th>Adulto</th>
+    <th>Criança</th>
+  </tr>
+  <tr>
+    <td>Cristo Redentor</td>
+    <td>R$ 88,40</td>
+    <td>R$ 54,60</td>
+  </tr>
+  <tr>
+    <td>Praia de Copacabana</td>
+    <td>R$ 0,00 (Gratuito)</td>
+    <td>R$ 0,00 (Gratuito)</td>
+  </tr>
+</table>
+
+  <p>Para saber se o preço de um passeio está justo adcionamos uma tabela para comparar. Vale a   pena ressaltar que preços variam, especialmente em alta temporada. Espero que tenha ajudado.     <b>Tenha uma otima estadia na Cidade Maravilhosa </b></p>
+
+<div class="link-pagina"> 
+    <p>  <a href = "/users/logout/">Clique aqui para fazer logout!</a> </p>
+  </div>
+  
+<footer>
+  <p>Criado por Bruno Barros Pinto</p>
+</footer>
+
+</body>
+
+</html>

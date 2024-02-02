@@ -1,0 +1,1 @@
+[{"model": "appdobruno.cuidadosdicas", "pk": 1, "fields": {"cuidados": "Não ande com o celular na mão", "lugares_para_ter_cuidado": "Becos", "perigo": 5}}, {"model": "appdobruno.cuidadosdicas", "pk": 3, "fields": {"cuidados": "Seja esperto para não pagar mais caro", "lugares_para_ter_cuidado": "Pontos Turisticos", "perigo": 1}}]

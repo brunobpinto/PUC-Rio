@@ -1,0 +1,23 @@
+
+<h1>{{ action }} Cuidados e Dicas</h1>
+
+
+<form method="post">
+  {% csrf_token %}
+  <div>
+    <label>Cuidado/Dica:</label>
+    <input name="cuidados" value="{{ cuidados.cuidados }}">
+  </div>
+
+  <div>
+    <label>Lugar para ter cuidado:</label>
+    <input name="lugares_para_ter_cuidado" value="{{ cuidados.lugares_para_ter_cuidado }}">
+  </div>
+
+  <div>
+    <label>Perigo:</label>
+    <input type="number" name="perigo" value="{{ cuidados.perigo }}">
+  </div>
+
+  <input type="submit" value="Registrar">
+</form>
