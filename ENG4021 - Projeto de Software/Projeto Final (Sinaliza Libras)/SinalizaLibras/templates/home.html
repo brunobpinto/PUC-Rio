@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block main %}
+<div>
+  {% if request.user.is_authenticated %} 
+    <b>Bem-vindo, {{request.user.username}}</b> <br>
+    <a href="/accounts/logout">Sair</a>
+  {% endif %} 
+</div>
+ 
+<div class="banner">
+  
+  <div class="banner-content">  
+    <img src="/static/images/SinalizaLibraLogo.png" alt="LogoPequena">
+    
+    <div class="banner-text">
+      <h1>SinalizaLibra</h1>
+      <p>
+      Explore o SinalizaLibra, plataforma dedicada ao aprendizado da Língua Brasileira de Sinais (LIBRAS). Nossa missão é tornar o aprendizado de LIBRAS acessível e inovador, promover a inclusão e valorizar a diversidade. Conecte-se a uma comunidade comprometida com a igualdade, o respeito e a excelência educacional. Oferecemos video aulas e questionários adequados para todos os níveis, proporcionando uma experiência de aprendizagem única. Ao escolher a SinalizaLibra, você pode contribuir para a construção de um mundo mais inclusivo, onde a comunicação transcende as barreiras linguísticas. Junte-se a nós para aprender, ensinar e fazer parte da mudança com LIBRAS.</p>
+  
+    
+  <div class="banner-link">
+    <a href="/register">Seja membro!</a>
+  </div>
+
+  </div>
+  </div>
+</div>
+{% endblock %}

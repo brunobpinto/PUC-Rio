@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+  width: 50px; /* Defina o tamanho desejado para o logotipo */
+  height: auto; /* Mantém a proporção original da imagem */
+  vertical-align: middle;
+  display: inline;
+
+}
+
+
+#menu-h{
+    background-color: rgb(255, 255, 255);
+    vertical-align: middle;
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+    text-align: right;
+
+}
+
+#menu-h ul li {
+    display: inline;
+    vertical-align: middle;
+
+}
+
+#menu-h ul li a {
+    color: #0F3C4B;
+    padding: 20px;
+    font-family:'Poppins';
+    font-size:20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+    vertical-align: middle;
+}
+
+#menu-h ul li a:hover {
+    color: #ffffff;
+    background-color:#0F3C4B;
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    color: #ffffff;
+    background-color: #0F3C4B;
+}
+
+#menu-h ul li:first-child a{
+  float:left;
+  font-size:24px;
+
+}
+
+#menu-h ul img {
+
+  width: 80px;
+  height: auto;
+  vertical-align: middle;
+  display: inline;
+}
+
+#menu-h ul button {
+    padding: 10px 20px; /* Adicione o espaçamento interno desejado */
+    border-radius: 20px; /* Isso faz com que os cantos fiquem arredondados */
+    background-color: #0F3C4B; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto no botão */
+    border: none; /* Remova a borda padrão */
+    cursor: pointer; /* Altere o cursor ao passar o mouse sobre o botão */
+    font-size: 20px; /* Tamanho da fonte */
+    font-family:'Poppins';
+    font-weight: bold; 
+  }
+
+
+
+.banner {
+  content: ""; 
+  background-color: #FFE0B2; /* Define a cor de fundo desejada */
+  background-image: url('/static/images/backgroundLogo.jpg');
+  background-size: cover; /* Redimensiona a imagem para preencher o contêiner */
+  color: #fff; /* Cor do texto no banner */
+  text-align: left; /* Centraliza o texto no banner */
+  padding: 50px; /* Espaçamento interno para melhorar a legibilidade */
+  opacity: 1.0; /* Define a opacidade da cor de fundo (ajuste conforme necessário) */
+  z-index: -1; /* Coloca o pseudo-elemento atrás da imagem de fundo */
+  display: flex; /* Usa o modelo flexbox para alinhar elementos na horizontal */
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; /* Adicionado para alinhar verticalmente */
+  height: 100vh;
+}
+
+.banner-content {
+  display: flex; /* Usa flexbox para alinhar .banner img e .banner h1 horizontalmente */
+  align-items: center; /* Alinha verticalmente ao centro */
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; /* Adicionado para alinhar verticalmente */
+  height: 100vh;
+  text-align: justify;
+  
+}
+
+.banner-text h1 {
+  font-size: 75px;
+  font-weight: bold;
+  font-family:'Poppins';
+  color:#0F3C4B;
+  margin: 0; /* Remove margens padrão do título */
+  margin-right: 0px; /* Espaçamento à direita da logo para separá-la do título */
+  margin-bottom: 0px;
+
+}
+
+.banner-text p {
+  font-size: 18px;
+  text-align: justify; /* Centraliza o texto no banner */
+  font-family:'Poppins';
+  color:#0F3C4B;
+  margin-top: 0;
+
+}
+
+.banner img {
+  width: 500px; /* Defina o tamanho desejado para a logo */
+  height: auto; /* Mantém a proporção original da imagem */
+  margin-right: 20px; /* Espaçamento à direita da logo para separá-la do título */
+}
+
+.banner a {
+  display: block; /* Transforma o link em um bloco para estilização */
+  background-color: #0F3C4B; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto no botão */
+  text-align: left; /* Centraliza o texto no banner */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  text-decoration: none; /* Remove sublinhado padrão */
+  border-radius: 5px; /* Arredonda os cantos do botão */
+  margin-top: 20px; /* Espaçamento superior do botão */
+  font-weight: bold; 
+  font-family:'Poppins';
+
+}

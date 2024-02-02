@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block main %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'register.css' %}" type="text/css" />
+  <title>Registre-se</title>
+</head>
+<body>
+
+<div>
+  <h2>{{ action }} Usuário</h2>
+</div>
+<div>
+  <form method="post">
+    {% csrf_token %}
+    <div>
+      <label>Nome:</label>
+      <input type="text" name="username">
+    </div>
+    <div>
+      <label>E-mail:</label>
+      <input type="email" name="email">
+    </div>
+    <div>
+      <label>Senha:</label>
+      <input type="password" name="password">
+    </div>
+  
+    <input type="submit" value="Registrar">
+  </form> 
+</div>
+
+
+</body>
+</html>
+
+
+{% endblock %}

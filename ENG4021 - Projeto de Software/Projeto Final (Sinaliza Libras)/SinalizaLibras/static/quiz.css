@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+#after_submit {
+  visibility: hidden;
+}
+.quizimage{
+  height: 100pt; 
+  width: 100pt;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.backgrounder {
+  background-image: url('/static/images/backgroundLogo.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  align-items: center;
+  text-align: center;
+  text-shadow: 1px 1px 2px pink;
+  font-family: Poppins;
+}

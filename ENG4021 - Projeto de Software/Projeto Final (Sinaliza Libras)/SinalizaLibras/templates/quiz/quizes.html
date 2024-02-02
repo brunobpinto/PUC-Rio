@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+{% block main %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'quiz.css' %}" type="text/css" />
+  <script type="text/javascript" src="{% static '/js/main.js'%}"></script>
+  <title>LibrasQuiz</title>
+</head>
+<body>
+  <div class="backgrounder">
+    <div class="content">
+      <form id = "quiz" name = "quiz">
+
+        <div>
+          <p>
+            </br><img src="/static/images/question1.PNG" class = "quizimages"></br></br>1. Que nomes podemos formar?
+          </p>
+          <div>
+            <input type="radio" id="mc" name="question1" value="CARLA, MARIA, CAIO, ANA">CARLA, MARIA, CAIO, ANA</br>
+            <input type="radio" id="mc" name="question1" value="CARLOS, MARIA, MARTA, ANNE">CARLOS, MARIA, MARTA, ANNE</br>
+            <input type="radio" id="mc" name="question1" value="MARIA, MARCO, MARA, RUTE">MARIA, MARCO, MARA, RUTE</br>
+            <input type="radio" id="mc" name="question1" value="MARIA, CAIO, MARCO, MARA">MARIA, CAIO, MARCO, MARA</br>
+          </div>
+        </div>
+
+        <div>
+          <p>
+            </br><img src="/static/images/question2.PNG" class = "quizimages"></br></br>2. Qual a letra correta?
+          </p>
+          <div>
+            <input type="radio" id="mc" name="question2" value="Z">Z</br>
+            <input type="radio" id="mc" name="question2" value="C">C</br>
+            <input type="radio" id="mc" name="question2" value="K">K</br>
+            <input type="radio" id="mc" name="question2" value="J">J</br>
+          </div>
+        </div>
+
+        <div>
+          <p>
+            </br><img src="/static/images/question3.PNG" class = "quizimages"></br></br>3. Qual a letra correta?
+          </p>
+          <div>
+            <input type="radio" id="mc" name="question3" value="K">K</br>
+            <input type="radio" id="mc" name="question3" value="J">J</br>
+            <input type="radio" id="mc" name="question3" value="I">I</br>
+            <input type="radio" id="mc" name="question3" value="L">L</br>
+          </div>
+        </div>
+
+        <div>
+          <p>
+            </br><img src="/static/images/question4.PNG" class = "quizimages"></br></br>4. Qual a letra correta?
+          </p>
+          <div>
+            <input type="radio" id="mc" name="question4" value="Y">Y</br>
+            <input type="radio" id="mc" name="question4" value="I">I</br>
+            <input type="radio" id="mc" name="question4" value="X">X</br>
+            <input type="radio" id="mc" name="question4" value="Z">Z</br>
+          </div>
+        </div>
+
+
+        <div>
+          <p>
+            </br><img src="/static/images/question5.PNG" class = "quizimages"></br></br>5. Qual a letra correta?
+          </p>
+          <div>
+            <input type="radio" id="mc" name="question5" value="I">I</br>
+            <input type="radio" id="mc" name="question5" value="G">G</br>
+            <input type="radio" id="mc" name="question5" value="H">H</br>
+            <input type="radio" id="mc" name="question5" value="X">X</br>
+          </div>
+        </div>
+
+        <div>
+          <p>
+            </br><img src="/static/images/question6.PNG" class = "quizimages"></br></br>6. Qual a letra correta?
+          </p>
+          <div>
+            <input type="radio" id="mc" name="question6" value="D">D</br>
+            <input type="radio" id="mc" name="question6" value="S">S</br>
+            <input type="radio" id="mc" name="question6" value="O">O</br>
+            <input type="radio" id="mc" name="question6" value="A">A</br>
+          </div>
+        </div>
+
+        <div>
+          <p>
+            </br><img src="/static/images/question7.PNG" class = "quizimages"></br></br>7. Qual a letra correta?
+          </p>
+          <div>
+            <input type="radio" id="mc" name="question7" value="M">M</br>
+            <input type="radio" id="mc" name="question7" value="B">B</br>
+            <input type="radio" id="mc" name="question7" value="G">G</br>
+            <input type="radio" id="mc" name="question7" value="W">W</br>
+          </div>
+        </div>
+
+        <div>
+          <p>
+            </br><img src="/static/images/question8.PNG" class = "quizimages"></br></br>8. Qual a letra correta?
+          </p>
+          <div>
+            <input type="radio" id="mc" name="question8" value="P">P</br>
+            <input type="radio" id="mc" name="question8" value="B">B</br>
+            <input type="radio" id="mc" name="question8" value="D">D</br>
+            <input type="radio" id="mc" name="question8" value="O">O</br>
+          </div>
+        </div>
+
+        <div>
+          <p>
+            </br><img src="/static/images/question9.PNG" class = "quizimages"></br></br>9. Qual a letra correta?
+          </p>
+          <div>
+            <input type="radio" id="mc" name="question9" value="F">F</br>
+            <input type="radio" id="mc" name="question9" value="Z">Z</br>
+            <input type="radio" id="mc" name="question9" value="L">L</br>
+            <input type="radio" id="mc" name="question9" value="T">T</br>
+          </div>
+        </div>
+
+        <div>
+          <p>
+            </br><img src="/static/images/question10.PNG" class = "quizimages"></br></br>10. Que nomes podemos formar?
+          </p>
+          <div>
+            <input type="radio" id="mc" name="question10" value="OSMAR, SÔNIA, SOFIA, ANDRESSA">OSMAR, SÔNIA, SOFIA, ANDRESSA</br>
+            <input type="radio" id="mc" name="question10" value="ISAAC, NAIR, OSIAS, ISABEL">ISAAC, NAIR, OSIAS, ISABEL</br>
+            <input type="radio" id="mc" name="question10" value="SÔNIA, SOFIA, OSIAS, OSNI">SÔNIA, SOFIA, OSIAS, OSNI</br>
+            <input type="radio" id="mc" name="question10" value="SÔNIA, SOFIA, NOEL, OSNI">SÔNIA, SOFIA, NOEL, OSNI</br>
+          </div>
+        </div>
+
+        <div>
+          <p>
+            </br><img src="/static/images/question11.PNG" class = "quizimages"></br></br>11. Que nomes podemos formar?
+          </p>
+          <div>
+            <input type="radio" id="mc" name="question11" value="ANA,TALITA, NATANAEL, TIAGO, RITA">ANA,TALITA, NATANAEL, TIAGO, RITA</br>
+            <input type="radio" id="mc" name="question11" value="RAMON, MARIA, MARIANA, MARTA, MARIO">RAMON, MARIA, MARIANA, MARTA, MARIO</br>
+            <input type="radio" id="mc" name="question11" value="ANA, MARIA, MARIANA, RITA, MARIO">ANA, MARIA, MARIANA, RITA, MARIO</br>
+            <input type="radio" id="mc" name="question11" value="ANA, MARIA, MARIANA, MARTA, RITA">ANA, MARIA, MARIANA, MARTA, RITA</br>
+          </div>
+        </div>
+
+
+
+        <div>
+          <input id="button" type="button" value="SUBMIT!" onclick="check();">
+          <div id="after_submit">
+            <p id="number_correct"></p>
+          </div>
+          <button onclick="myFunction()">Restart</button>
+        </div>
+
+      </form>
+      
+    </div>
+    
+  </div>
+  
+  
+</body>
+</html>
+
+{% endblock %}
